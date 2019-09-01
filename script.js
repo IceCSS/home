@@ -31,12 +31,12 @@ join.addEventListener('click', function() {
             lng: parseFloat(position.coords.longitude)
         };
 
-        // ip-api API
-        fetch('http://ip-api.com/json/')
+        // Geolocation API
+        fetch('https://ipapi.co/json/')
             .then(r => r.json())
             .then(j => {
-                let userCountry = j.country.toLowerCase();
-                let userCountryCode = j.countryCode.toLowerCase();
+                let userCountry = j.country_name.toLowerCase();
+                let userCountryCode = j.country.toLowerCase();
 
                 let newCountry = true;
                 json.countries.forEach(c => {
