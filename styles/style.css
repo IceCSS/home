@@ -1,0 +1,176 @@
+body {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+td { width: 1px; }
+
+.card { border: 0; }
+
+/* Global */
+.mt-10 { margin-top: 10em; }
+
+.mt-15 { margin-top: 15em; }
+
+.text-muted { font-size: 9px; }
+
+.material-icons.md-70 { font-size: 70px; }
+
+.btn {
+    color: black;
+    border: 2px solid blue;
+    border-radius: 40px;
+    background: transparent;
+}
+
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+a { color: inherit; }
+a:hover { color: inherit; }
+
+.sidebar {
+    position: fixed;
+    padding-top: 40vh;
+    padding-right: 2vh;
+
+    height: 100%;
+
+    top: 0;
+    right: 0;
+}
+
+.nav-item {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+}
+
+.nav-link {
+    margin: 2px 0 2px 0;
+    color: black;
+    background-color: transparent;
+}
+
+.nav-link:hover {
+    color: #dae0e6;
+}
+
+.nav-pills > a.active {
+    margin: 2px 0 2px 0;
+    color: #dae0e6 !important;
+    background-color: transparent !important;
+}
+
+/* header */
+#header {
+    background-color: #ffffff;
+    background-image: url("../src/arrow.svg");
+}
+
+.header-split {
+    height: 90vh;
+    display: grid;
+}
+
+.header-left {
+    grid-column: 1;
+    width: 49vw;
+}
+
+.header-left-content {
+    margin-left: 20vw;
+    margin-top: 40vh;
+}
+
+.count { font-size: 80px; }
+
+.header-right {
+    width: 49vw;
+    grid-column: 2;
+}
+
+.header-right-content {
+    margin-left: 5vw;
+    margin-top: 25vh;
+}
+
+.list-group {
+    width: 80%;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.list-group:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.50), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+/* stats */
+#stat {
+    padding: 7em;
+    background-color: #ebeff4;
+}
+
+.card {
+    background-color: inherit;
+}
+
+#root {
+    padding: 7em;
+}
+
+/* info */
+#info {
+    padding: 7em;
+    background-color: #ebeff4;
+}
+
+#footer {
+    height: 100vh;
+    width: 100%;
+    color: white;
+    background-color: #323742;
+}
+
+/* enquiry */
+#enquiry {
+    height: 60vh;
+    background-color: #1c2431;
+}
+
+#enquiry-form {
+    padding-top: 20vh;
+    text-align: center;
+}
+
+#enquiry-input {
+    width: 50vw;
+    display: inline-block;
+}
+
+#enquiry-btn {
+    border: 2px white solid;
+}
+
+#enquiry-btn {
+    color: white;
+}
+
+#enquiry-btn:hover {
+}
+
+/* footer */
+#footer-split {
+    height: 40vh;
+    display: grid;
+}
+
+#footer-left {
+    grid-column: 1;
+}
+
+#footer-right {
+    width: 40vw;
+    grid-column: 2;
+}
