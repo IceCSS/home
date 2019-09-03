@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap, AOS, Google Materical Icon -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!-- Local CSS -->
+        <link type="text/css" href="styles/style.css" rel="stylesheet">
+    </head>
+    <body data-spy="scroll" data-target="#side-nav" data-offset="70">
+        <div class="start">.</div><!-- prevent scroll-snap bug -->
+
+        <nav id="side-nav" class="sidebar navbar-toggleable-md">
+            <div class="nav-pills">
+                <a class="nav-item nav-link active" href="#header">
+                    <i class="material-icons">panorama_fish_eye</i>
+                </a>
+                <a class="nav-item nav-link" href="#stat">
+                    <i class="material-icons">panorama_fish_eye</i>
+                </a>
+                <a class="nav-item nav-link" href="#root">
+                    <i class="material-icons">panorama_fish_eye</i>
+                </a>
+                <a class="nav-item nav-link" href="#info">
+                    <i class="material-icons">panorama_fish_eye</i>
+                </a>
+                <a class="nav-item nav-link" href="#footer">
+                    <i class="material-icons">panorama_fish_eye</i>
+                </a>
+            </div>
+        </nav>
+
+        <section id="header" class="arrow-bg">
+            <div class="header-split">
+                <div class="header-left">
+                    <div class="header-left-content">
+                        <div class="header-left-title">
+                            <h1>Join</h1>
+                            <div class="count">0000000</div>
+                            <h3>Individuals in the fun!</h3>
+                        </div>
+
+                        <button class="btn btn-primary" type="button">
+                            <a href="#root"><i class="material-icons">plus_one</i></a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="header-right">
+                    <div class="header-right-content">
+                        <ul class="list-group list-group-flush mt-10">
+                            <li class="list-group-item">
+                                There is only 2 step. Click the Join Button!
+                            </li>
+                            <li class="list-group-item">
+                                1. Click the Join Button!
+                            </li>
+                            <li class="list-group-item">
+                                2. Allow Geolocation to valid your country.
+                            </li>
+                            <li class="list-group-item text-muted">
+                                Disclaimer: This is a project intended
+                                for expanding my web development skills.
+                                Apologies in advance if you found bugs.
+                            </li>
+                            <li class="list-group-item">
+                                Rule 1: Be Fair and participate once.
+                                (I've validated so you only vote once)
+                            </li>
+                            <li class="list-group-item">
+                                Rule 2: Keep in mind, this is a small project <br>
+                                using free api, so please respect the site. Thanks!
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <i class="material-icons">expand_more</i>
+            </div>
+        </section>
+
+        <section id="stat">
+            <div class="container text-center">
+                <div class="card-group mt-15" data-aos="fade-right">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="material-icons md-70">my_location</i>
+                            <h5 class="card-title">Accurate and Safe</h5>
+                            <p class="card-text">Provides secure location detection that only records the country you are in.
+                                (This ensure that the country entered is correct and valid)</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="material-icons md-70">plus_one</i>
+                            <h5 class="card-title">Join</h5>
+                            <p class="card-text">With one click be part of the website
+                                (Purpose is too have fun and see which country uses the internet a lot)</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="material-icons md-70">public</i>
+                            <h5 class="card-title">Card 3</h5>
+                            <p class="card-text">
+                                Get to see how many people come and go on internet.
+                             </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="root">
+            <div class="container">
+                <div class="text-center pb-5">
+                    <button id="join-btn" class="btn btn-primary" type="button">Join</button>
+                </div>
+
+                <div class="row text-center">
+                    <div class="col">
+                        <table id="table-1" class="table table-bordered">
+                            <tr>
+                                <th>Rank</th>
+                                <th>Country</th>
+                                <th>Number of Visitors</th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col">
+                        <table id="table-2" class="table table-bordered">
+                            <tr>
+                                <th>Rank</th>
+                                <th>Country</th>
+                                <th>Number of Visitors</th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div id="root-msg" class="text-center">
+                    <!-- <h1>You Have Participated</h1> -->
+                </div>
+            </div>
+        </section>
+
+        <section id="info">
+            <h1>Space for other content if this becomes a thing. Maybe FAQ or Random Fact</h1>
+        </section>
+
+        <section id="footer" class="">
+            <div id="enquiry" data-aos="zoom-in">
+                <form id="enquiry-form" class="text-center">
+                    <h1 class="font-italic">Got a Question??</h1><br>
+                    <div id="enquiry-input" class="form-group">
+                        <input type="email" class="form-control form-control-lg" placeholder="JohnDoe@email.com">
+                    </div>
+                    <button id="enquiry-btn" type="button" class="btn btn-primary btn-lg">Submit</button>
+                </form>
+            </div>
+
+            <div id="footer-split" class="p-5">
+                 <div id="footer-left" class="">
+                    <h5 class="text-uppercase font-weight-bold">Developer's Note</h5>
+                    <p>A small scale project as a hobby to help my web development skills. I hope the
+                        website looks pleasing. Throughout the journey, I was able to discovery new css tools to animate
+                        and create a more vibrate and clean webpage. Additionally, I got a better understand and way more
+                        confident with Javascript and how API functions. <br>
+                        Finally feel free to add your country to the list. Everything is secure and anonymous. <br>
+                        Thanks a lot for visiting. <br>
+                        PS: The footer links lead back to the top :) --->
+                    </p>
+                 </div>
+                 <div id="footer-right" class="pl-5">
+                   <h5 class="text-uppercase font-weight-bold">Links</h5>
+                   <ul>
+                       <li>Facebook</li>
+                       <li>Twitter</li>
+                       <li>Youtube</li>
+                       <li>Github</li>
+                   </ul>
+                 </div>
+            </div>
+        </section>
+
+        <div class="end">.</div><!-- prevent scroll-snap bug -->
+
+        <!-- JQuery, Ajax, Bootstrap, AOS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>AOS.init();</script>
+
+
+        <!-- Local JS -->
+        <script type="text/javascript" src="src/counter.js"></script>
+        <script src="src/countries.js"></script>
+        <script type="text/javascript" src="src/script.js"></script>
+
+    </body>
+</html>
